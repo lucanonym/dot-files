@@ -1,0 +1,47 @@
+# Navigation
+
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus north
+alt - k : yabai -m window --focus south
+alt - l : yabai -m window --focus east
+
+# Change focus between windows
+alt - s : yabai -m display --focus west
+alt - g : yabai -m display --focus east
+
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+# flip y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# Modify Window size
+
+# maximize
+shift + alt - f : yabai -m window --toggle zoom-fullscreen
+
+# balance window back
+shift + alt - b : yabai -m space --balance
+
+# swap windows
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap north
+shift + alt - k : yabai -m window --swap south
+shift + alt - l : yabai -m window --swap east
+
+# move windows to displays
+shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
+shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
+
+
+
+# Application Shortcuts
+alt - return : open /Applications/Alacritty.app  
+alt - w : open -na ~/Applications/Firefox.app
